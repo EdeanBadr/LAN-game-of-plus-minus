@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_server: phony || CMakeFiles/server.dir
 
 build CMakeFiles/server.dir/Server/Server.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/badr-eddine/LAN-game-of-plus-minus/Server/Server.cpp || cmake_object_order_depends_target_server
   DEP_FILE = CMakeFiles/server.dir/Server/Server.cpp.o.d
-  FLAGS = -g
+  FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/badr-eddine/LAN-game-of-plus-minus/libs
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir/Server
@@ -83,7 +83,7 @@ build cmake_object_order_depends_target_client: phony || CMakeFiles/client.dir
 
 build CMakeFiles/client.dir/Client/Client.cpp.o: CXX_COMPILER__client_unscanned_Debug /home/badr-eddine/LAN-game-of-plus-minus/Client/Client.cpp || cmake_object_order_depends_target_client
   DEP_FILE = CMakeFiles/client.dir/Client/Client.cpp.o.d
-  FLAGS = -g
+  FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/badr-eddine/LAN-game-of-plus-minus/libs
   OBJECT_DIR = CMakeFiles/client.dir
   OBJECT_FILE_DIR = CMakeFiles/client.dir/Client

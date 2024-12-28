@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/badr-eddine/LAN-game-of-plus-minus/libs
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 

@@ -64,6 +64,11 @@ void handleServerResponse(const httplib::Response& res, const std::string& actio
                 }
                 std::cout << std::endl;
             }
+            if (response.contains("Target")){
+                std::cout <<"the value you couldn't guess is :" <<response["Target"] << std::endl;
+
+
+            }
         } catch (const json::parse_error& e) {
             std::cerr << "Error parsing " << action << " response: " << e.what() << std::endl;
         }
@@ -140,7 +145,6 @@ void playGame(const ClientConfig& config) {
         }
 
         json guess_data = {{"name", config.name}, {"guess", guess}, {"auto", config.auto_mode}};
-        std::cout << "Player " << guess_data["name"] << " guessed " << guess_data["guess"] << std::endl;
         auto guess_res = client.Post("/guess", guess_data.dump(), "application/json");
 
         if (!guess_res) {
@@ -151,10 +155,14 @@ void playGame(const ClientConfig& config) {
         try {
             auto response = json::parse(guess_res->body);
             hint = response["hint"];
-            std::cout << "Hint: " << hint << std::endl;
-
+            std::string message;
             if (response.contains("message")) {
-                std::cout << "Server message: " << response["message"] << std::endl;
+                message = response["message"];
+                std::cout <<message<< std::endl;
+            }
+            if (response.contains("Target")){
+                std::cout <<"the value you couldn't guess is :" <<response["Target"] << std::endl;
+
             }
 
             if (hint == "correct") {
@@ -172,9 +180,6 @@ void playGame(const ClientConfig& config) {
                 guess = 0;
                 hint.clear();
             } else if (hint == "game_over") {
-                if (response.contains("message")) {
-                    std::cout << response["message"] << std::endl;
-                }
                 std::cout << "You lost! Do you want to try again? (y/n): ";
                 char choice;
                 std::cin >> choice;

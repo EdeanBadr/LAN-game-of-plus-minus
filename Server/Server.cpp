@@ -182,11 +182,10 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         player_guesses_count[player_name]++;
         int target = player_targets[player_name];
 
-        if (serverConfig.limit > 0 && player_guesses_count[player_name] > serverConfig.limit) {
+        if (serverConfig.limit > 0 && player_guesses_count[player_name] >= serverConfig.limit) {
             response["hint"] = "game_over";
             response["message"] = "You have reached the maximum number of tries!";
             response["target"] = target;  
-            res.status = 200;
             res.set_content(response.dump(), "application/json");
             
             gamestats.endTime = getCurrentTime();
@@ -202,13 +201,11 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         }
 
         if (guess < target) {
-            std::cout<<guess<<" is lower"<<std::endl;
             response["hint"] = "higher";
-            response["message"] = "Try a higher number";
+            response["message"] = "Bro Try a higher number";
         } else if (guess > target) {
-            std::cout<<guess<<" is higher"<<std::endl;
             response["hint"] = "lower";
-            response["message"] = "Try a lower number";
+            response["message"] = "Bro Try a lower number";
         } else {
                 response["hint"] = "correct";
                 response["message"] = "Congratulations! You've found the number!";
