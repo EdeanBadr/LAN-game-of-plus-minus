@@ -12,12 +12,7 @@ struct ClientConfig {
     std::string name="unkown player"; 
     bool auto_mode = false;  
 };
-int AutoGuesser(int lower, int upper) {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(lower, upper);
-    return dis(gen);
-}
+
 void parseArguments(int argc, char* argv[], ClientConfig& config) {
     int opt;
     const char* short_opts = "h:p:n:a";  
@@ -68,11 +63,15 @@ void playGame(const ClientConfig& config) {
         std::cout << start_res->body << std::endl;
     } else {
         std::cerr << "Failed to start the game!" << std::endl;
+        if (start_res) {
+            std::cerr << "Server returned status code: " << start_res->status << std::endl;
+            std::cerr << "Response body: " << start_res->body << std::endl;
+        }
         return;
     }
 
     int lower = 0;
-    int upper = 100; 
+    int upper = 100;
     int guess = 0;
     std::string hint;
 
@@ -84,34 +83,61 @@ void playGame(const ClientConfig& config) {
             } else if (hint == "lower") {
                 upper = guess - 1;
             }
-            guess = (lower + upper) / 2; 
-        }  else {
-            std::cout << "Enter your guess (must be integer): ";
-            while (!(std::cin >> guess)) {
-                std::cin.clear(); 
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
-                std::cout << "Please enter an integer: ";
-            }
-        }
+            guess = (lower + upper) / 2;
+            std::cout << "Making guess: " << guess << std::endl;
+        } else {
+            std::cout << "Enter your guess (must be integer) or 'q' to quit: ";
+            std::string input;
+            std::cin >> input;
 
-        json guess_data;
-        guess_data["name"] = config.name;
-        guess_data["guess"] = guess;
-        auto guess_res = client.Post("/guess", guess_data.dump(), "application/json");
+            if (input == "q" || input == "Q") {
+                std::cout << "You chose to quit!" << std::endl;
+                json quit_data;
+                quit_data["name"] = config.name;
 
-        if (guess_res && guess_res->status == 200) {
-            auto response = json::parse(guess_res->body);
-            hint = response["hint"];
-            std::cout << "Hint: " << hint << std::endl;
-
-            if (hint == "correct") {
-                std::cout << "You guessed the number! A new game has started. Try again!" << std::endl;
-                
-                start_res = client.Post("/start", start_data.dump(), "application/json");
-                if (start_res && start_res->status == 200) {
-                    std::cout << start_res->body << std::endl;
+                auto quit_res = client.Post("/giveup", quit_data.dump(), "application/json");
+                if (quit_res && quit_res->status == 200) {
+                    try {
+                        auto response = json::parse(quit_res->body);
+                        if (response.contains("message")) {
+                            std::cout << response["message"] << std::endl;
+                        }
+                        if (response.contains("Target")) {
+                            std::cout << "The number was: " << response["Target"] << std::endl;
+                        }
+                    } catch (const json::parse_error& e) {
+                        std::cerr << "Error parsing server response: " << e.what() << std::endl;
+                    }
                 } else {
-                    std::cerr << "Failed to start a new game!" << std::endl;
+                    std::cerr << "Failed to give up!" << std::endl;
+                }
+
+                std::cout << "Do you want to continue playing? (y/n): ";
+                char choice;
+                std::cin >> choice;
+                if (choice == 'n' || choice == 'N') {
+                    json quit_data;
+                    quit_data["name"] = config.name;
+                    auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
+                    if (quit_res && quit_res->status == 200) {
+                        try {
+                            auto response = json::parse(quit_res->body);
+                            if (response.contains("message")) {
+                                std::cout << response["message"] << std::endl;
+                            }
+                            if (response.contains("top_scores")) {
+                                std::cout << "Your best scores: ";
+                                for (const auto& score : response["top_scores"]) {
+                                    std::cout << score << " ";
+                                }
+                                std::cout << std::endl;
+                            }
+                        } catch (const json::parse_error& e) {
+                            std::cerr << "Error parsing server response: " << e.what() << std::endl;
+                        }
+                    } else {
+                        std::cerr << "Failed to quit!" << std::endl;
+                    }
                     break;
                 }
 
@@ -119,9 +145,128 @@ void playGame(const ClientConfig& config) {
                 upper = 100;
                 guess = 0;
                 hint.clear();
+            
+            }
+
+            std::regex int_regex("^-?[0-9]+$");
+            if (std::regex_match(input, int_regex)) {
+                guess = std::stoi(input);
+            } else {
+                std::cout << "Invalid input. Please enter a valid integer or 'q' to quit." << std::endl;
+                continue;
+            }
+        }
+
+        json guess_data;
+        guess_data["name"] = config.name;
+        guess_data["guess"] = guess;
+        std::cout<<"the player "<<guess_data["name"]<<" guessed "<<guess_data["guess"]<<std::endl;
+        auto guess_res = client.Post("/guess", guess_data.dump(), "application/json");
+
+        if (guess_res) {
+            try {
+                auto response = json::parse(guess_res->body);
+                hint = response["hint"];
+                std::cout << "Hint: " << hint << std::endl;
+
+                if (response.contains("message")) {
+                    std::cout << "Server message: " << response["message"] << std::endl;
+                }
+
+                if (hint == "correct") {
+                    std::cout << "You guessed the number! Do you want to try again? (y/n): ";
+                    char choice;
+                    std::cin >> choice;
+                    if (choice == 'n' || choice == 'N') {
+                        json quit_data;
+                        quit_data["name"] = config.name;
+                        auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
+                        if (quit_res && quit_res->status == 200) {
+                            try {
+                                auto quit_response = json::parse(quit_res->body);
+                                if (quit_response.contains("message")) {
+                                    std::cout << quit_response["message"] << std::endl;
+                                }
+                                if (quit_response.contains("top_scores")) {
+                                    std::cout << "Your best scores: ";
+                                    for (const auto& score : quit_response["top_scores"]) {
+                                        std::cout << score << " ";
+                                    }
+                                    std::cout << std::endl;
+                                }
+                            } catch (const json::parse_error& e) {
+                                std::cerr << "Error parsing server response: " << e.what() << std::endl;
+                            }
+                        } else {
+                            std::cerr << "Failed to quit!" << std::endl;
+                        }
+                        break;
+                    }
+
+                    start_res = client.Post("/start", start_data.dump(), "application/json");
+                    if (!start_res || start_res->status != 200) {
+                        std::cerr << "Failed to start a new game!" << std::endl;
+                        break;
+                    }
+
+                    lower = 0;
+                    upper = 100;
+                    guess = 0;
+                    hint.clear();
+                } else if (hint == "game_over") {
+                    if (response.contains("message")) {
+                        std::cout << response["message"] << std::endl;
+                    }
+                    std::cout << "You lost! Do you want to try again? (y/n): ";
+                    char choice;
+                    std::cin >> choice;
+                    if (choice == 'n' || choice == 'N') {
+                        json quit_data;
+                        quit_data["name"] = config.name;
+                        auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
+                        if (quit_res && quit_res->status == 200) {
+                            try {
+                                auto quit_response = json::parse(quit_res->body);
+                                if (quit_response.contains("message")) {
+                                    std::cout << quit_response["message"] << std::endl;
+                                }
+                                if (quit_response.contains("top_scores")) {
+                                    std::cout << "Your best scores: ";
+                                    for (const auto& score : quit_response["top_scores"]) {
+                                        std::cout << score << " ";
+                                    }
+                                    std::cout << std::endl;
+                                }
+                            } catch (const json::parse_error& e) {
+                                std::cerr << "Error parsing server response: " << e.what() << std::endl;
+                            }
+                        } else {
+                            std::cerr << "Failed to quit!" << std::endl;
+                        }
+                        break;
+                    }
+
+                    start_res = client.Post("/start", start_data.dump(), "application/json");
+                    if (!start_res || start_res->status != 200) {
+                        std::cerr << "Failed to start a new game!" << std::endl;
+                        break;
+                    }
+
+                    lower = 0;
+                    upper = 100;
+                    guess = 0;
+                    hint.clear();
+                }
+            } catch (const json::parse_error& e) {
+                std::cerr << "Error parsing server response: " << e.what() << std::endl;
+                break;
             }
         } else {
             std::cerr << "Error: Unable to send guess!" << std::endl;
+            if (guess_res) {
+                std::cerr << "Server returned status code: " << guess_res->status << std::endl;
+                std::cerr << "Response body: " << guess_res->body << std::endl;
+            }
             break;
         }
     }
@@ -136,7 +281,6 @@ int main(int argc, char* argv[]) {
     } else {
             std::cout << "Player name: " << config.name << "\n";
     }
-
     playGame(config);
 
     return 0;
