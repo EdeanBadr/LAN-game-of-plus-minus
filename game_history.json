@@ -1,436 +1,133 @@
-[
-    {
-        "end_time": "28/12/24 15:48:04",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:48:02",
-        "tries_count": 2
-    },
-    {
-        "end_time": "28/12/24 15:48:10",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:48:04",
-        "tries_count": 3
-    },
-    {
-        "end_time": "28/12/24 15:48:17",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:48:10",
-        "tries_count": 7
-    },
-    {
-        "end_time": "28/12/24 15:54:02",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:53:59",
-        "tries_count": 2
-    },
-    {
-        "end_time": "28/12/24 15:54:06",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:54:02",
-        "tries_count": 2
-    },
-    {
-        "end_time": "28/12/24 15:54:12",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:54:06",
-        "tries_count": 3
-    },
-    {
-        "end_time": "28/12/24 15:54:27",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:54:18",
-        "tries_count": 16
-    },
-    {
-        "end_time": "28/12/24 15:54:41",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 15:54:41",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 16:14:30",
-        "game_state": "LOST",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:14:24",
-        "tries_count": 16
-    },
-    {
-        "end_time": "28/12/24 16:14:39",
-        "game_state": "gave up",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:14:39",
-        "tries_count": 0
-    },
-    {
-        "end_time": "28/12/24 16:14:45",
-        "game_state": "gave up",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:14:45",
-        "tries_count": 0
-    },
-    {
-        "end_time": "28/12/24 16:14:53",
-        "game_state": "gave up",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:14:53",
-        "tries_count": 0
-    },
-    {
-        "end_time": "28/12/24 16:17:08",
-        "game_state": "gave up",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:17:08",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 16:17:13",
-        "game_state": "gave up",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:17:13",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 16:17:19",
-        "game_state": "gave up",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:17:19",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 16:20:29",
-        "game_state": "WON",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:20:25",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 16:21:43",
-        "game_state": "WON",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:21:37",
-        "tries_count": 7
-    },
-    {
-        "end_time": "28/12/24 16:25:28",
-        "game_state": "WON",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:25:27",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 16:25:39",
-        "game_state": "WON",
-        "player_name": "bilal",
-        "start_time": "28/12/24 16:25:28",
-        "tries_count": 5
-    },
-    {
-        "end_time": "28/12/24 16:25:53",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:25:51",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 16:26:02",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:25:53",
-        "tries_count": 6
-    },
-    {
-        "end_time": "28/12/24 16:26:10",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:26:10",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 16:26:21",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:26:10",
-        "tries_count": 9
-    },
-    {
-        "end_time": "28/12/24 16:41:01",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:40:55",
-        "tries_count": 7
-    },
-    {
-        "end_time": "28/12/24 16:41:11",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:41:11",
-        "tries_count": 0
-    },
-    {
-        "end_time": "28/12/24 16:41:25",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:41:25",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 16:47:09",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:47:05",
-        "tries_count": 7
-    },
-    {
-        "end_time": "28/12/24 16:47:18",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:47:09",
-        "tries_count": 11
-    },
-    {
-        "end_time": "28/12/24 16:47:30",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:47:30",
-        "tries_count": 6
-    },
-    {
-        "end_time": "28/12/24 16:49:49",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:49:49",
-        "tries_count": 5
-    },
-    {
-        "end_time": "28/12/24 16:52:15",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:52:05",
-        "tries_count": 7
-    },
-    {
-        "end_time": "28/12/24 16:53:14",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:53:12",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 16:53:25",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:53:14",
-        "tries_count": 2
-    },
-    {
-        "end_time": "28/12/24 16:56:37",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:56:36",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 16:56:48",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:56:37",
-        "tries_count": 9
-    },
-    {
-        "end_time": "28/12/24 16:57:43",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:57:38",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 16:57:52",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:57:43",
-        "tries_count": 2
-    },
-    {
-        "end_time": "28/12/24 16:58:02",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:57:52",
-        "tries_count": 11
-    },
-    {
-        "end_time": "28/12/24 16:58:15",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 16:58:02",
-        "tries_count": 11
-    },
-    {
-        "end_time": "28/12/24 17:00:09",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:00:09",
-        "tries_count": 0
-    },
-    {
-        "end_time": "28/12/24 17:03:03",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:02:58",
-        "tries_count": 5
-    },
-    {
-        "end_time": "28/12/24 17:03:10",
-        "game_state": "gave up",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:03:10",
-        "tries_count": 3
-    },
-    {
-        "end_time": "28/12/24 17:03:28",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:03:10",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:06:46",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:06:38",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:10:50",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:10:45",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:11:07",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:10:50",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:11:23",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:11:07",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:11:33",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:11:23",
-        "tries_count": 3
-    },
-    {
-        "end_time": "28/12/24 17:14:42",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:14:36",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:14:47",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:14:42",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:14:49",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:14:47",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:14:50",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:14:50",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 17:14:56",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:14:50",
-        "tries_count": 4
-    },
-    {
-        "end_time": "28/12/24 17:15:03",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:14:56",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:15:07",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:15:03",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:15:11",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:15:07",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:15:13",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:15:11",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:15:18",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:15:13",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:15:19",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:15:18",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 17:16:05",
-        "game_state": "LOST",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:15:56",
-        "tries_count": 10
-    },
-    {
-        "end_time": "28/12/24 17:16:14",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:16:05",
-        "tries_count": 1
-    },
-    {
-        "end_time": "28/12/24 17:16:22",
-        "game_state": "WON",
-        "player_name": "badro",
-        "start_time": "28/12/24 17:16:14",
-        "tries_count": 7
-    }
-]
+{
+    "end_time": "28/12/24 18:30:19",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:30:15",
+    "tries_count": 7
+}
+{
+    "end_time": "28/12/24 18:30:45",
+    "game_state": "gave up",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:30:45",
+    "tries_count": 0
+}
+{
+    "end_time": "28/12/24 18:30:59",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:30:45",
+    "tries_count": 4
+}
+{
+    "end_time": "28/12/24 18:31:05",
+    "game_state": "gave up",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:31:05",
+    "tries_count": 2
+}
+{
+    "end_time": "28/12/24 18:31:20",
+    "game_state": "gave up",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:31:20",
+    "tries_count": 6
+}
+{
+    "end_time": "28/12/24 18:31:48",
+    "game_state": "gave up",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:31:48",
+    "tries_count": 8
+}
+{
+    "end_time": "28/12/24 18:52:45",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:52:38",
+    "tries_count": 7
+}
+{
+    "end_time": "28/12/24 18:53:05",
+    "game_state": "LOST",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:52:48",
+    "tries_count": 10
+}
+{
+    "end_time": "28/12/24 18:54:15",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:54:12",
+    "tries_count": 5
+}
+{
+    "end_time": "28/12/24 18:54:30",
+    "game_state": "gave up",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:54:30",
+    "tries_count": 6
+}
+{
+    "end_time": "28/12/24 18:54:46",
+    "game_state": "LOST",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:54:37",
+    "tries_count": 10
+}
+{
+    "end_time": "28/12/24 18:57:20",
+    "game_state": "LOST",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:57:14",
+    "tries_count": 10
+}
+{
+    "end_time": "28/12/24 18:58:12",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:57:22",
+    "tries_count": 4
+}
+{
+    "end_time": "28/12/24 18:58:21",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 18:58:13",
+    "tries_count": 2
+}
+{
+    "end_time": "28/12/24 19:03:54",
+    "game_state": "WON",
+    "player_name": "bilal",
+    "start_time": "28/12/24 19:03:43",
+    "tries_count": 8
+}
+{
+    "end_time": "28/12/24 19:04:10",
+    "game_state": "WON",
+    "player_name": "bilal",
+    "start_time": "28/12/24 19:04:08",
+    "tries_count": 2
+}
+{
+    "end_time": "28/12/24 19:05:11",
+    "game_state": "WON",
+    "player_name": "badro",
+    "start_time": "28/12/24 19:05:03",
+    "tries_count": 3
+}
+{
+    "end_time": "28/12/24 19:05:23",
+    "game_state": "LOST",
+    "player_name": "badro",
+    "start_time": "28/12/24 19:05:17",
+    "tries_count": 10
+}
+{
+    "end_time": "28/12/24 19:05:39",
+    "game_state": "WON",
+    "player_name": "bilal",
+    "start_time": "28/12/24 19:05:17",
+    "tries_count": 5
+}

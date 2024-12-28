@@ -11,6 +11,7 @@
 #include <fstream>
 
 using json = nlohmann::json;
+std::ofstream outfile; 
 const std::string GAME_HISTORY_FILE = "../game_history.json";
 
 std::map<std::string, int> player_targets;
@@ -19,6 +20,16 @@ std::mutex player_mutex;
 std::map<std::string, std::multiset<int>> player_score_history;
 std::mutex score_mutex;
 std::mutex file_mutex;
+
+bool openFile() {
+    outfile.open(GAME_HISTORY_FILE, std::ios::app);  
+    if (!outfile.is_open()) {
+        std::cerr << "Error opening file for appending." << std::endl;
+        return false;
+    }
+    std::cout << "File opened for appending." << std::endl;  
+    return true;
+}
 
 auto getTopScores(const std::string& player_name) {
     std::lock_guard<std::mutex> lock(score_mutex);
@@ -45,7 +56,7 @@ struct Gamestats {
     std::string gameState = "";
 };
 
-void appendGameStats(const Gamestats& gamestats) {
+/**void appendGameStats(const Gamestats& gamestats) {
     std::lock_guard<std::mutex> lock(file_mutex);
     std::ifstream infile(GAME_HISTORY_FILE);
     json game_history;
@@ -74,8 +85,26 @@ void appendGameStats(const Gamestats& gamestats) {
 
     outfile << game_history.dump(4);
     outfile.close();
-}
+}**/
+void appendGameStats(const Gamestats& gamestats) {
+    std::lock_guard<std::mutex> lock(file_mutex);
 
+    if (!outfile.is_open()) {
+        std::cerr << "File is not open. Cannot write game stats." << std::endl;
+        return;
+    }
+
+    json game_entry;
+    game_entry["player_name"] = gamestats.playerName;
+    game_entry["start_time"] = gamestats.startTime;
+    game_entry["end_time"] = gamestats.endTime;
+    game_entry["tries_count"] = gamestats.triesCount;
+    game_entry["game_state"] = gamestats.gameState;
+
+    outfile << game_entry.dump(4) << "\n";
+    outfile.flush(); 
+    std::cout << "Appended game stats to file." << std::endl;  // Debug message
+}
 std::string getCurrentTime() {
     auto now = std::chrono::system_clock::now();
     auto now_time_t = std::chrono::system_clock::to_time_t(now);
@@ -141,8 +170,8 @@ void parseArguments(int argc, char* argv[], ServerConfig& config) {
 }
 
 auto randomNumberGenerator(int lower, int upper) {
-    std::random_device randev;
-    std::mt19937 rng(randev());
+    static std::random_device randev;
+    static std::mt19937 rng(randev()); 
     std::uniform_int_distribution<> dis(lower, upper);
     return dis(rng);
 }
@@ -169,6 +198,9 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         gamestats.playerName = player_name;
         int guess = data["guess"];
         bool auto_mode = data["auto"];
+         for (auto player :player_targets){
+            std::cout<<player.first<<std::endl;
+        }
 
         std::lock_guard<std::mutex> lock(player_mutex);
         if (player_targets.find(player_name) == player_targets.end()) {
@@ -187,7 +219,6 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
             response["message"] = "You have reached the maximum number of tries!";
             response["target"] = target;  
             res.set_content(response.dump(), "application/json");
-            
             gamestats.endTime = getCurrentTime();
             gamestats.triesCount = player_guesses_count[player_name];
             gamestats.gameState = "LOST";
@@ -196,7 +227,6 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
             }
             player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
             player_guesses_count[player_name] = 0;
-            gamestats.startTime = getCurrentTime();
             return;
         }
 
@@ -209,7 +239,6 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         } else {
                 response["hint"] = "correct";
                 response["message"] = "Congratulations! You've found the number!";
-                
                 gamestats.endTime = getCurrentTime();
                 gamestats.triesCount = player_guesses_count[player_name];
                 gamestats.gameState = "WON";
@@ -371,16 +400,38 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
     }
 }
 
+void newGameHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
+    auto data = json::parse(req.body);
+    std::string player_name = data["name"];
+    json response;
+    
+    std::lock_guard<std::mutex> lock(player_mutex);
+    if (player_targets.find(player_name) == player_targets.end()) {
+        response["hint"] = "error";
+        response["message"] = "Player doesn't exist. Please use /start first.";
+        res.status = 400;
+        res.set_content(response.dump(), "application/json");
+        return;
+    }
 
+    player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
+    player_guesses_count[player_name] = 0;
+    gamestats.startTime = getCurrentTime();
+    response["hint"] = "new_game";
+    response["message"] = "New game started with existing player!";
+    res.status = 200;
+    res.set_content(response.dump(), "application/json");
+}
 
 int main(int argc, char* argv[]) {
     ServerConfig serverConfig;
     Gamestats gamestats;
     parseArguments(argc, argv, serverConfig);
-    std::cout << serverConfig.lower_bound << " to " << serverConfig.upper_bound << std::endl;
-
     httplib::Server svr;
-    
+    if (!openFile()) {
+        return -1;
+    }
+
     svr.Post("/start", [&](const httplib::Request &req, httplib::Response &res) {
         startGameHandler(req, res, serverConfig, gamestats);
     });
@@ -389,12 +440,18 @@ int main(int argc, char* argv[]) {
         guessHandler(req, res, serverConfig, gamestats);
     });
 
+    svr.Post("/newGame", [&](const httplib::Request &req, httplib::Response &res) {
+        newGameHandler(req, res, serverConfig, gamestats);
+    });
+
     svr.Post("/quit", [&](const httplib::Request &req, httplib::Response &res) {
         quitHandler(req, res, gamestats);
     });
+
     svr.Post("/giveup", [&](const httplib::Request &req, httplib::Response &res) {
-        giveUpHandler(req, res,serverConfig, gamestats);
+        giveUpHandler(req, res, serverConfig, gamestats);
     });
 
     svr.listen("0.0.0.0", serverConfig.port);
+    outfile.close();
 }

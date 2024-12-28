@@ -81,6 +81,28 @@ void handleServerResponse(const httplib::Response& res, const std::string& actio
     }
 }
 
+void startNewGame(httplib::Client& client, const ClientConfig& config, int& lower, int& upper, int& guess, std::string& hint) {
+    json new_game_data = {{"name", config.name}};
+    auto new_game_res = client.Post("/newGame", new_game_data.dump(), "application/json");
+    if (!new_game_res || new_game_res->status != 200) {
+        std::cerr << "Failed to start new game!" << std::endl;
+        return;
+    }
+    lower = 0;
+    upper = 100;
+    guess = 0;
+    hint.clear();
+    
+    try {
+        auto response = json::parse(new_game_res->body);
+        if (response.contains("message")) {
+            std::cout << response["message"] << std::endl;
+        }
+    } catch (const json::parse_error& e) {
+        std::cerr << "Error parsing new game response: " << e.what() << std::endl;
+    }
+}
+
 void playGame(const ClientConfig& config) {
     httplib::Client client(config.host, config.port);
     json start_data;
@@ -128,11 +150,9 @@ void playGame(const ClientConfig& config) {
                     handleServerResponse(*quit_res, "quit");
                     break;
                 }
-
-                lower = 0;
-                upper = 100;
-                guess = 0;
-                hint.clear();
+                
+                startNewGame(client, config, lower, upper, guess, hint);
+                continue;
             } else {
                 std::regex int_regex("^-?[0-9]+$");
                 if (std::regex_match(input, int_regex)) {
@@ -158,15 +178,15 @@ void playGame(const ClientConfig& config) {
             std::string message;
             if (response.contains("message")) {
                 message = response["message"];
-                std::cout <<message<< std::endl;
+                std::cout << message << std::endl;
             }
             if (response.contains("Target")){
-                std::cout <<"the value you couldn't guess is :" <<response["Target"] << std::endl;
-
+                std::cout << "The value you couldn't guess is: " << response["Target"] << std::endl;
             }
 
-            if (hint == "correct") {
-                std::cout << "You guessed the number! Do you want to try again? (y/n): ";
+            if (hint == "correct" || hint == "game_over") {
+                std::cout << (hint == "correct" ? "You guessed the number! " : "You lost! ");
+                std::cout << "Do you want to try again? (y/n): ";
                 char choice;
                 std::cin >> choice;
                 if (choice == 'n' || choice == 'N') {
@@ -175,24 +195,8 @@ void playGame(const ClientConfig& config) {
                     handleServerResponse(*quit_res, "quit");
                     break;
                 }
-                lower = 0;
-                upper = 100;
-                guess = 0;
-                hint.clear();
-            } else if (hint == "game_over") {
-                std::cout << "You lost! Do you want to try again? (y/n): ";
-                char choice;
-                std::cin >> choice;
-                if (choice == 'n' || choice == 'N') {
-                    json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                    auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
-                    handleServerResponse(*quit_res, "quit");
-                    break;
-                }
-                lower = 0;
-                upper = 100;
-                guess = 0;
-                hint.clear();
+                
+                startNewGame(client, config, lower, upper, guess, hint);
             }
         } catch (const json::parse_error& e) {
             std::cerr << "Error parsing server response: " << e.what() << std::endl;
@@ -200,7 +204,6 @@ void playGame(const ClientConfig& config) {
         }
     }
 }
-
 int main(int argc, char* argv[]) {
     ClientConfig config;
 
