@@ -168,7 +168,7 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         std::string player_name = data["name"];
         gamestats.playerName = player_name;
         int guess = data["guess"];
-        std::cout<<"the client guessed"<<guess<<std::endl;
+        bool auto_mode = data["auto"];
 
         std::lock_guard<std::mutex> lock(player_mutex);
         if (player_targets.find(player_name) == player_targets.end()) {
@@ -192,7 +192,9 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
             gamestats.endTime = getCurrentTime();
             gamestats.triesCount = player_guesses_count[player_name];
             gamestats.gameState = "LOST";
+            if(!auto_mode){
             appendGameStats(gamestats);
+            }
             player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
             player_guesses_count[player_name] = 0;
             gamestats.startTime = getCurrentTime();
@@ -215,22 +217,21 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
                 gamestats.triesCount = player_guesses_count[player_name];
                 gamestats.gameState = "WON";
                 int current_score = player_guesses_count[player_name];
-                
+                if(!auto_mode){
                 try {
                     updatePlayerScores(player_name, current_score);
                 } catch (const std::exception& e) {
                     std::cerr << "Error updating player scores: " << e.what() << std::endl;
                 }
-
-                player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
-                player_guesses_count[player_name] = 0;
-
                 try {
                     appendGameStats(gamestats);
                 } catch (const std::exception& e) {
                     std::cerr << "Error appending game stats: " << e.what() << std::endl;
                 }
+                }
 
+                player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
+                player_guesses_count[player_name] = 0;
                 gamestats.startTime = getCurrentTime();
             }
 
@@ -254,6 +255,7 @@ void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats 
     try {
         auto data = json::parse(req.body);
         std::string player_name = data["name"];
+        bool auto_mode= data["auto"];
 
         json response;
         {
@@ -267,9 +269,11 @@ void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats 
             }
 
             try {
-                auto top_scores = getTopScores(player_name);
+
                 response["message"] = "Thank you for playing!";
-                response["top_scores"] = top_scores;
+                if(!auto_mode){
+                auto top_scores = getTopScores(player_name);
+                response["top_scores"] = top_scores;}
             } catch (const std::exception &e) {
                 res.status = 500;
                 response["error"] = "Failed to retrieve top scores.";
@@ -309,7 +313,7 @@ void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats 
     }
 }
 
-void giveUpHandler(const httplib::Request &req, httplib::Response &res, Gamestats &gamestats) {
+void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats &gamestats) {
     try {
         auto data = json::parse(req.body);
         std::string player_name = data["name"];
@@ -334,6 +338,8 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, Gamestat
             gamestats.triesCount = player_guesses_count[player_name];
             gamestats.gameState = "gave up";
             gamestats.startTime = getCurrentTime();
+            player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
+
 
             try {
                 appendGameStats(gamestats);
@@ -390,7 +396,7 @@ int main(int argc, char* argv[]) {
         quitHandler(req, res, gamestats);
     });
     svr.Post("/giveup", [&](const httplib::Request &req, httplib::Response &res) {
-        giveUpHandler(req, res, gamestats);
+        giveUpHandler(req, res,serverConfig, gamestats);
     });
 
     svr.listen("0.0.0.0", serverConfig.port);

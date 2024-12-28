@@ -94,7 +94,7 @@ void playGame(const ClientConfig& config) {
                 std::cout << "You chose to quit!" << std::endl;
                 json quit_data;
                 quit_data["name"] = config.name;
-
+                quit_data["auto"] =config.auto_mode;
                 auto quit_res = client.Post("/giveup", quit_data.dump(), "application/json");
                 if (quit_res && quit_res->status == 200) {
                     try {
@@ -118,6 +118,7 @@ void playGame(const ClientConfig& config) {
                 if (choice == 'n' || choice == 'N') {
                     json quit_data;
                     quit_data["name"] = config.name;
+                    quit_data["auto"] =config.auto_mode;
                     auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
                     if (quit_res && quit_res->status == 200) {
                         try {
@@ -160,6 +161,8 @@ void playGame(const ClientConfig& config) {
         json guess_data;
         guess_data["name"] = config.name;
         guess_data["guess"] = guess;
+        guess_data["auto"] =config.auto_mode;
+
         std::cout<<"the player "<<guess_data["name"]<<" guessed "<<guess_data["guess"]<<std::endl;
         auto guess_res = client.Post("/guess", guess_data.dump(), "application/json");
 
@@ -180,6 +183,7 @@ void playGame(const ClientConfig& config) {
                     if (choice == 'n' || choice == 'N') {
                         json quit_data;
                         quit_data["name"] = config.name;
+                        quit_data["auto"] =config.auto_mode;
                         auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
                         if (quit_res && quit_res->status == 200) {
                             try {
@@ -223,6 +227,7 @@ void playGame(const ClientConfig& config) {
                     if (choice == 'n' || choice == 'N') {
                         json quit_data;
                         quit_data["name"] = config.name;
+                        quit_data["auto"] =config.auto_mode;
                         auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
                         if (quit_res && quit_res->status == 200) {
                             try {

@@ -54,5 +54,54 @@
         "player_name": "badro",
         "start_time": "28/12/24 15:54:41",
         "tries_count": 1
+    },
+    {
+        "end_time": "28/12/24 16:14:30",
+        "game_state": "LOST",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:14:24",
+        "tries_count": 16
+    },
+    {
+        "end_time": "28/12/24 16:14:39",
+        "game_state": "gave up",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:14:39",
+        "tries_count": 0
+    },
+    {
+        "end_time": "28/12/24 16:14:45",
+        "game_state": "gave up",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:14:45",
+        "tries_count": 0
+    },
+    {
+        "end_time": "28/12/24 16:14:53",
+        "game_state": "gave up",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:14:53",
+        "tries_count": 0
+    },
+    {
+        "end_time": "28/12/24 16:17:08",
+        "game_state": "gave up",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:17:08",
+        "tries_count": 4
+    },
+    {
+        "end_time": "28/12/24 16:17:13",
+        "game_state": "gave up",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:17:13",
+        "tries_count": 4
+    },
+    {
+        "end_time": "28/12/24 16:17:19",
+        "game_state": "gave up",
+        "player_name": "bilal",
+        "start_time": "28/12/24 16:17:19",
+        "tries_count": 4
     }
 ]
