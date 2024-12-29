@@ -23,10 +23,7 @@ This project is a client-server implementation of a guessing game where the clie
    cd LAN-game-of-plus-minus
    ```
 
-2. Install dependencies:
-   Ensure the `nlohmann/json` and `cpp-httplib` libraries are available and included in your project.
-
-3. Build the project using CMake:
+2. Build the project using CMake:
    ```bash
    mkdir build
    cd build
