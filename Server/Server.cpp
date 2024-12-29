@@ -11,15 +11,16 @@
 #include <fstream>
 
 using json = nlohmann::json;
-std::ofstream outfile; 
-const std::string GAME_HISTORY_FILE = "../game_history.json";
 
 std::map<std::string, int> player_targets;
-std::unordered_map<std::string, std::string> player_tokens; 
 std::map<std::string, int> player_guesses_count;
 std::mutex player_mutex;
+
 std::map<std::string, std::multiset<int>> player_score_history;
 std::mutex score_mutex;
+
+std::ofstream outfile; 
+const std::string GAME_HISTORY_FILE = "../game_history.json";
 std::mutex file_mutex;
 
 bool openFile() {
@@ -185,21 +186,30 @@ std::string generateUniqueName(const std::string& player_name) {
 }
 
 void startGameHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
-    auto data = json::parse(req.body);
-    std::string player_name = data["name"];
-    std::string unique_name = generateUniqueName(player_name); 
-    json response;
-    {   
     std::lock_guard<std::mutex> lock(player_mutex);
-    player_targets[unique_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
-    player_guesses_count[unique_name] = 0; 
+    try {
+        auto data = json::parse(req.body);
+        if (!data.contains("name") || !data["name"].is_string()) {
+            res.status = 400; 
+            res.set_content("Invalid request:the name field is required and must be a string!", "text/plain");
+            return;
+        }
+        std::string player_name = data["name"];
+        std::string unique_name = generateUniqueName(player_name);
+
+        player_targets[unique_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
+        player_guesses_count[unique_name] = 0; 
+        gamestats.startTime = getCurrentTime();
+
+        json response;
+        response["uniqueName"] = unique_name;
+        response["message"] = "Game started!";
+        res.set_content(response.dump(), "application/json");
+        std::cout << "The Game has started for: " << unique_name << std::endl;
+    } catch (const std::exception &e) {
+        res.status = 500; 
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     }
-    response["uniqueName"]=unique_name;
-    gamestats.startTime = getCurrentTime();
-
-    std::cout << "The Game has started for: " << unique_name << std::endl;
-
-    res.set_content(response.dump(), "text/plain");
 }
 void guessHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
     json response;
@@ -228,7 +238,7 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         if (serverConfig.limit > 0 && player_guesses_count[player_name] >= serverConfig.limit) {
             response["hint"] = "game_over";
             response["message"] = "You have reached the maximum number of tries!";
-            response["target"] = target;  
+            response["Target"] = target;  
             res.set_content(response.dump(), "application/json");
             gamestats.endTime = getCurrentTime();
             gamestats.triesCount = player_guesses_count[player_name];
@@ -263,7 +273,7 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
                 try {
                     appendGameStats(gamestats);
                 } catch (const std::exception& e) {
-                    std::cerr << "Error appending game stats: " << e.what() << std::endl;
+                     std::cerr << "Error saving the game stats" << e.what() << std::endl;
                 }
                 }
 
@@ -276,15 +286,11 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         res.set_content(response.dump(), "application/json");
 
     } catch (const json::parse_error& e) {
-        response["hint"] = "error";
-        response["message"] = "Invalid request format";
         res.status = 400;
-        res.set_content(response.dump(), "application/json");
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     } catch (const std::exception& e) {
-        response["hint"] = "error";
-        response["message"] = "Internal server error";
         res.status = 500;
-        res.set_content(response.dump(), "application/json");
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     }
 }
 
@@ -334,19 +340,11 @@ void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats 
 
     } catch (const json::exception &e) {
         res.status = 400;
-        json response = {
-            {"error", "Invalid JSON format."},
-            {"details", e.what()}
-        };
-        res.set_content(response.dump(), "application/json");
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
 
     } catch (const std::exception &e) {
         res.status = 500;
-        json response = {
-            {"error", "An unexpected error occurred."},
-            {"details", e.what()}
-        };
-        res.set_content(response.dump(), "application/json");
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     }
 }
 
@@ -361,30 +359,24 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
 
             if (player_targets.find(player_name) == player_targets.end()) {
                 res.status = 400;
-                response["error"] = "Player does not exist.";
+                response["error"] = "You haven't even signed in.";
                 res.set_content(response.dump(), "application/json");
                 return;
             }
 
             int target = player_targets[player_name];
-
             response["message"] = "Never Give Up Again!";
             response["Target"] = target;
-
             gamestats.endTime = getCurrentTime();
             gamestats.triesCount = player_guesses_count[player_name];
             gamestats.gameState = "gave up";
             gamestats.startTime = getCurrentTime();
             player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
 
-
             try {
                 appendGameStats(gamestats);
             } catch (const std::exception &e) {
-                res.status = 500;
-                response["error"] = "Failed to append game stats.";
-                response["details"] = e.what();
-                res.set_content(response.dump(), "application/json");
+                std::cerr << "Error saving the game stats" << e.what() << std::endl;
                 return;
             }
 
@@ -395,31 +387,22 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
 
     } catch (const json::exception &e) {
         res.status = 400;
-        json response = {
-            {"error", "Invalid JSON format."},
-            {"details", e.what()}
-        };
-        res.set_content(response.dump(), "application/json");
-
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     } catch (const std::exception &e) {
         res.status = 500;
-        json response = {
-            {"error", "An unexpected error occurred."},
-            {"details", e.what()}
-        };
-        res.set_content(response.dump(), "application/json");
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     }
 }
 
 void newGameHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
+    try{
     auto data = json::parse(req.body);
     std::string player_name = data["name"];
     json response;
-    
     std::lock_guard<std::mutex> lock(player_mutex);
     if (player_targets.find(player_name) == player_targets.end()) {
         response["hint"] = "error";
-        response["message"] = "Player doesn't exist. Please use /start first.";
+        response["message"] = "Player doesn't exist. Please hit the /start endpoint first.";
         res.status = 400;
         res.set_content(response.dump(), "application/json");
         return;
@@ -430,8 +413,14 @@ void newGameHandler(const httplib::Request &req, httplib::Response &res, ServerC
     gamestats.startTime = getCurrentTime();
     response["hint"] = "new_game";
     response["message"] = "New game started with existing player!";
-    res.status = 200;
     res.set_content(response.dump(), "application/json");
+    }catch (const json::exception &e) {
+        res.status = 400;
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
+    } catch (const std::exception &e) {
+        res.status = 500;
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
+    }
 }
 
 int main(int argc, char* argv[]) {
