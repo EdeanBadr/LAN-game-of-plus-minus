@@ -49,7 +49,6 @@ void parseArguments(int argc, char* argv[], ClientConfig& config) {
     }
 }
 
-
 void handleServerResponse(const httplib::Response& res, const std::string& action) {
     if (res.status == 200) {
         try {
@@ -103,20 +102,19 @@ void startNewGame(httplib::Client& client, const ClientConfig& config, int& lowe
     }
 }
 
-void playGame(const ClientConfig& config) {
+void playGame( ClientConfig& config) {
     httplib::Client client(config.host, config.port);
     json start_data;
     if (!config.name.empty()) {
         start_data["name"] = config.name;
     }
-
     auto start_res = client.Post("/start", start_data.dump(), "application/json");
+    auto response = json::parse(start_res->body);
     if (!start_res || start_res->status != 200) {
         std::cerr << "Failed to start the game!" << std::endl;
         return;
     }
-    std::cout << start_res->body << std::endl;
-
+    config.name=response["uniqueName"];
     int lower = 0, upper = 100, guess = 0;
     std::string hint;
 

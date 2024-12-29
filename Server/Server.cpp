@@ -15,6 +15,7 @@ std::ofstream outfile;
 const std::string GAME_HISTORY_FILE = "../game_history.json";
 
 std::map<std::string, int> player_targets;
+std::unordered_map<std::string, std::string> player_tokens; 
 std::map<std::string, int> player_guesses_count;
 std::mutex player_mutex;
 std::map<std::string, std::multiset<int>> player_score_history;
@@ -175,20 +176,30 @@ auto randomNumberGenerator(int lower, int upper) {
     std::uniform_int_distribution<> dis(lower, upper);
     return dis(rng);
 }
+std::string generateUniqueName(const std::string& player_name) {
+    static std::random_device randev;
+    static std::mt19937 rng(randev()); 
+    std::uniform_int_distribution<> dis(100000, 999999);  
+    int random_number = dis(rng);
+    return player_name + "_" + std::to_string(random_number);  
+}
 
 void startGameHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
     auto data = json::parse(req.body);
     std::string player_name = data["name"];
-    {
-        std::lock_guard<std::mutex> lock(player_mutex);
-        if (player_targets.find(player_name) == player_targets.end()) {
-            player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
-            player_guesses_count[player_name] = 0; 
-            std::cout << "The Game has started for: " << player_name << std::endl;
-            gamestats.startTime = getCurrentTime();
-        }
+    std::string unique_name = generateUniqueName(player_name); 
+    json response;
+    {   
+    std::lock_guard<std::mutex> lock(player_mutex);
+    player_targets[unique_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
+    player_guesses_count[unique_name] = 0; 
     }
-    res.set_content("Game started!", "text/plain");
+    response["uniqueName"]=unique_name;
+    gamestats.startTime = getCurrentTime();
+
+    std::cout << "The Game has started for: " << unique_name << std::endl;
+
+    res.set_content(response.dump(), "text/plain");
 }
 void guessHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
     json response;
