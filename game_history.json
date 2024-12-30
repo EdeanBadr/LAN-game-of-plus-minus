@@ -264,3 +264,2439 @@
     "start_time": "29/12/24 17:31:34",
     "tries_count": 4
 }
+{
+    "end_time": "30/12/24 00:47:06",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_263669",
+    "start_time": "30/12/24 00:47:06",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 00:48:48",
+    "game_state": "LOST",
+    "player_name": "limitTestPlayer_357031",
+    "start_time": "30/12/24 00:48:48",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:48:48",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_357031",
+    "start_time": "30/12/24 00:48:48",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "limitTestPlayer_102825",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_102825",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_893834",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_893834",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player0_867326",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player1_316560",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player2_375981",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player3_136614",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player5_384106",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player4_724032",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player6_875867",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player7_757411",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player9_762292",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "player8_436302",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:55",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_137057",
+    "start_time": "30/12/24 00:51:55",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "limitTestPlayer_307256",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_307256",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_951591",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_951591",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player0_197339",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player1_802402",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player2_149950",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player3_460824",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player4_297204",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player5_907468",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player7_390405",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player6_716836",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player9_715430",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "player8_195085",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 00:51:57",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_581546",
+    "start_time": "30/12/24 00:51:57",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:14:07",
+    "game_state": "gave up",
+    "player_name": "bba_150107",
+    "start_time": "30/12/24 01:14:07",
+    "tries_count": 2
+}
+{
+    "end_time": "30/12/24 01:14:23",
+    "game_state": "gave up",
+    "player_name": "bba_150107",
+    "start_time": "30/12/24 01:14:23",
+    "tries_count": 2
+}
+{
+    "end_time": "30/12/24 01:14:50",
+    "game_state": "LOST",
+    "player_name": "bba_210075",
+    "start_time": "30/12/24 01:14:35",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_728197",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_831273",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player0_839245",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player1_664046",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player2_187152",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player3_794551",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player4_728076",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player5_314221",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player6_719806",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player7_555136",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player8_630244",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "player9_947728",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:16:31",
+    "game_state": "WON",
+    "player_name": "historyPlayer_994958",
+    "start_time": "30/12/24 01:16:31",
+    "tries_count": 1
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_813305",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_186687",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player0_145472",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player1_860674",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player2_115127",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player3_248392",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player4_771140",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player5_975263",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player6_623908",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player7_738857",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player9_858105",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "player8_946559",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:17:34",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_753630",
+    "start_time": "30/12/24 01:17:34",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_400615",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_644426",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player0_504633",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player1_833718",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player2_963427",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player3_718612",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player4_574122",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player5_396406",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player6_554997",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player7_698636",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player9_229956",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "player8_383828",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_644638",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:21:16",
+    "game_state": "WON",
+    "player_name": "historyPlayer_644638",
+    "start_time": "30/12/24 01:21:16",
+    "tries_count": 2
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_330212",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_417024",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player0_619301",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player1_604003",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player2_600983",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player3_528138",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player4_778933",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player5_394811",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player6_780304",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player7_716168",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player8_808474",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "player9_375722",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_557474",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:05",
+    "game_state": "WON",
+    "player_name": "historyPlayer_557474",
+    "start_time": "30/12/24 01:30:05",
+    "tries_count": 2
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_198278",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_867704",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player0_998752",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player9_990791",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player2_590830",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player3_649906",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player4_852890",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player5_268212",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player6_836254",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player7_128720",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player8_760338",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "player1_578268",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:30:51",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_630574",
+    "start_time": "30/12/24 01:30:51",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:37:41",
+    "game_state": "LOST",
+    "player_name": "badro_978920",
+    "start_time": "30/12/24 01:37:35",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:37:58",
+    "game_state": "LOST",
+    "player_name": "badro_611143",
+    "start_time": "30/12/24 01:37:54",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:40:17",
+    "game_state": "LOST",
+    "player_name": "badro_488958",
+    "start_time": "30/12/24 01:39:44",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:40:32",
+    "game_state": "LOST",
+    "player_name": "badro_488958",
+    "start_time": "30/12/24 01:40:23",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:42:51",
+    "game_state": "LOST",
+    "player_name": "badro_310623",
+    "start_time": "30/12/24 01:42:36",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:43:07",
+    "game_state": "gave up",
+    "player_name": "badro_310623",
+    "start_time": "30/12/24 01:43:07",
+    "tries_count": 1
+}
+{
+    "end_time": "30/12/24 01:43:14",
+    "game_state": "gave up",
+    "player_name": "badro_310623",
+    "start_time": "30/12/24 01:43:14",
+    "tries_count": 1
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_799463",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_806164",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player0_900091",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player8_643767",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player2_379972",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player3_737534",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player4_151279",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player5_180902",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player6_646008",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player7_200441",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player9_332288",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "player1_685085",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:45:43",
+    "game_state": "WON",
+    "player_name": "historyPlayer_376827",
+    "start_time": "30/12/24 01:45:43",
+    "tries_count": 2
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_502660",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_821767",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player0_565412",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player1_288577",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player3_133509",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player4_320403",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player6_679741",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player7_886110",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player8_899047",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player9_371168",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player2_690961",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "player5_192221",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:49:27",
+    "game_state": "WON",
+    "player_name": "historyPlayer_810099",
+    "start_time": "30/12/24 01:49:27",
+    "tries_count": 1
+}
+{
+    "end_time": "30/12/24 01:54:20",
+    "game_state": "gave up",
+    "player_name": "badro_381605",
+    "start_time": "30/12/24 01:54:20",
+    "tries_count": 2
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_841508",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "boundaryPlayer_967335",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player0_837791",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player1_101598",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player2_884781",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player4_988777",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player6_800929",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player3_769531",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player7_850532",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player8_862628",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player9_390455",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "player5_368042",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_191625",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_191625",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_191625",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_191625",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "LOST",
+    "player_name": "historyPlayer_191625",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 3
+}
+{
+    "end_time": "30/12/24 01:56:58",
+    "game_state": "WON",
+    "player_name": "historyPlayer_191625",
+    "start_time": "30/12/24 01:56:58",
+    "tries_count": 1
+}
+{
+    "end_time": "30/12/24 01:58:07",
+    "game_state": "gave up",
+    "player_name": "limitTestPlayer_478291",
+    "start_time": "30/12/24 01:58:07",
+    "tries_count": 0
+}
+{
+    "end_time": "30/12/24 01:58:07",
+    "game_state": "WON",
+    "player_name": "historyPlayer_414680",
+    "start_time": "30/12/24 01:58:07",
+    "tries_count": 69
+}

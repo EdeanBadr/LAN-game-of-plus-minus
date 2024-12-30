@@ -52,7 +52,7 @@ void parseArguments(int argc, char* argv[], ClientConfig& config) {
 class ClientGame {
 private:
     ClientConfig config;
-    httplib::Client* client;
+    httplib::Client& client;
     static ClientGame* instance;
     std::string hint;
 
@@ -65,7 +65,7 @@ private:
             try {
                 auto response = json::parse(res->body);
                 if (response.contains("message")) {
-                    std::cout << response["message"] << std::endl;
+                    std::cout << response["message"].get<std::string>()  << std::endl;
                 }
                 if (response.contains("top_scores")) {
                     std::cout << "Your best scores: ";
@@ -75,7 +75,7 @@ private:
                     std::cout << std::endl;
                 }
                 if (response.contains("Target")){
-                    std::cout << "The value you couldn't guess is: " << response["Target"] << std::endl;
+                    std::cout << "The value you couldn't guess is: " << (int)response["Target"]<< std::endl;
                 }
             } catch (const json::parse_error& e) {
                 std::cerr << "Error parsing " << action << " response: " << e.what() << std::endl;
@@ -83,8 +83,9 @@ private:
         } else {
             std::cerr << "Failed to " << action << "!" << std::endl;
             if (res->status != 0) {
+                auto response = json::parse(res->body);
                 std::cerr << "Server returned status code: " << res->status << std::endl;
-                std::cerr << "Response body: " << res->body << std::endl;
+                std::cerr << response["message"].get<std::string>()  << std::endl;
             }
         }
     }
@@ -110,11 +111,11 @@ private:
             try {
                 if (hint=="higher" || hint=="lower" || hint.empty()) {
                  json giveup_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                 auto quit_res = client->Post("/giveup", giveup_data.dump(), "application/json");
+                 auto quit_res = client.Post("/giveup", giveup_data.dump(), "application/json");
                  handleServerResponse(quit_res, "giveup");
                 }
                 json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                auto quit_res = client->Post("/quit", quit_data.dump(), "application/json");
+                auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
             } catch (const std::exception& e) {
                 std::cerr << "Error during cleanup: " << e.what() << std::endl;
             }
@@ -124,7 +125,7 @@ private:
 
     void startNewGame(int& lower, int& upper, int& guess, std::string& hint) {
         json new_game_data = {{"name", config.name}};
-        auto new_game_res = client->Post("/newGame", new_game_data.dump(), "application/json");
+        auto new_game_res = client.Post("/newGame", new_game_data.dump(), "application/json");
         handleServerResponse(new_game_res, "start a new game");
         lower = 0;
         upper = 100;
@@ -135,7 +136,7 @@ private:
     void start() {
         json start_data;
         start_data["name"] = config.name;
-        auto start_res = client->Post("/start", start_data.dump(), "application/json");
+        auto start_res = client.Post("/start", start_data.dump(), "application/json");
         handleServerResponse(start_res, "start");
         auto response = json::parse(start_res->body);
         config.name = response["uniqueName"];
@@ -143,7 +144,7 @@ private:
     }
 
 public:
-    ClientGame(const ClientConfig& cfg, httplib::Client* cli) 
+    ClientGame(const ClientConfig& cfg, httplib::Client& cli) 
         : config(cfg), client(cli) {
         instance = this;
         setupSignalHandlers();
@@ -172,14 +173,14 @@ public:
                     if (input == "q" || input == "Q") {
                         std::cout << "You chose to give up!" << std::endl;
                         json giveup_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                        auto giveup_res = client->Post("/giveup", giveup_data.dump(), "application/json");
+                        auto giveup_res = client.Post("/giveup", giveup_data.dump(), "application/json");
                         handleServerResponse(giveup_res, "give up");  
                         std::cout << "Do you want to continue playing? ('n/N' to quit): ";
                         char choice;
                         std::cin >> choice;
                         if (choice == 'n' || choice == 'N') {
                             json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                            auto quit_res = client->Post("/quit", quit_data.dump(), "application/json");
+                            auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
                             handleServerResponse(quit_res, "quit");
                             break;
                         }
@@ -196,7 +197,7 @@ public:
                 }
 
                 json guess_data = {{"name", config.name}, {"guess", guess}, {"auto", config.auto_mode}};
-                auto guess_res = client->Post("/guess", guess_data.dump(), "application/json");
+                auto guess_res = client.Post("/guess", guess_data.dump(), "application/json");
                 handleServerResponse(guess_res, "guess");
 
                 try {
@@ -209,7 +210,7 @@ public:
                         std::cin >> choice;
                         if (choice == 'n' || choice == 'N') {
                             json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                            auto quit_res = client->Post("/quit", quit_data.dump(), "application/json");
+                            auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
                             handleServerResponse(quit_res, "quit");
                             break;
                         }
@@ -225,7 +226,7 @@ public:
         }
     }
 };
-gi
+
 ClientGame* ClientGame::instance = nullptr;
 int main(int argc, char* argv[]) {
     try {
@@ -239,7 +240,7 @@ int main(int argc, char* argv[]) {
             std::cout << "Player name: " << config.name << "\n";
         }
         
-        ClientGame game(config, &client);
+        ClientGame game(config, client);
         game.playGame();
         return 0;
     } catch (const std::exception& e) {

@@ -203,13 +203,18 @@ void startGameHandler(const httplib::Request &req, httplib::Response &res, Serve
 
         json response;
         response["uniqueName"] = unique_name;
-        response["message"] = "Game started!";
+        response["message"] = "The Game started! Your number is between "+std::to_string(serverConfig.lower_bound) + 
+                                " and " + 
+                                std::to_string(serverConfig.upper_bound);
         res.set_content(response.dump(), "application/json");
         std::cout << "The Game has started for: " << unique_name << std::endl;
     } catch (const std::exception &e) {
         res.status = 500; 
         res.set_content(std::string("Error: ") + e.what(), "text/plain");
     }
+}
+bool isValidGuess(int guess, const ServerConfig& config) {
+    return guess >= config.lower_bound && guess <= config.upper_bound;
 }
 void guessHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
     json response;
@@ -219,8 +224,14 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
         gamestats.playerName = player_name;
         int guess = data["guess"];
         bool auto_mode = data["auto"];
-         for (auto player :player_targets){
-            std::cout<<player.first<<std::endl;
+        if (!isValidGuess(guess, serverConfig)) {
+            response["hint"] = "invalid";
+            response["message"] = "Invalid guess: Must be between " + 
+                                std::to_string(serverConfig.lower_bound) + 
+                                " and " + 
+                                std::to_string(serverConfig.upper_bound);
+            res.set_content(response.dump(), "application/json");
+            return;
         }
 
         std::lock_guard<std::mutex> lock(player_mutex);

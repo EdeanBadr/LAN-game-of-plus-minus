@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Linux-c++"
-	BuildStamp="20241229-1632-Experimental"
+	BuildStamp="20241230-0104-Experimental"
 	Name="badr-eddine-IdeaPad-Gaming-3-15ACH6"
 	Generator="ctest-3.28.3"
 	CompilerName="/usr/bin/c++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="4095"
 	TotalPhysicalMemory="13312"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="4242.07"
+	ProcessorClockFrequency="3814.12"
 	>
 	<Testing>
-		<StartDateTime>Dec 30 00:44 CET</StartDateTime>
-		<StartTestTime>1735515849</StartTestTime>
+		<StartDateTime>Dec 30 02:04 CET</StartDateTime>
+		<StartTestTime>1735520688</StartTestTime>
 		<TestList/>
-		<EndDateTime>Dec 30 00:44 CET</EndDateTime>
-		<EndTestTime>1735515849</EndTestTime>
+		<EndDateTime>Dec 30 02:04 CET</EndDateTime>
+		<EndTestTime>1735520688</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

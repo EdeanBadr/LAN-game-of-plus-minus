@@ -252,6 +252,9 @@ DART_TESTING_TIMEOUT:STRING=1500
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
+//The directory containing a CMake configuration file for GTest.
+GTest_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/GTest
+
 //Value Computed by CMake
 LANGAME_BINARY_DIR:STATIC=/home/badr-eddine/LAN-game-of-plus-minus/out/build/Preset
 
@@ -356,6 +359,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/badr-eddine/LAN-game-of-plus-minus
@@ -433,6 +438,8 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding GTest
+FIND_PACKAGE_MESSAGE_DETAILS_GTest:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake][c ][v1.14.0()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
