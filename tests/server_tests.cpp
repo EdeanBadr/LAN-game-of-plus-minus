@@ -302,7 +302,6 @@ TEST_F(GameServerTest, GameHistoryPersistence) {
             break;
         }
     }
-
     json quit_request;
     quit_request["name"] = player_name;
     quit_request["auto"] = false;

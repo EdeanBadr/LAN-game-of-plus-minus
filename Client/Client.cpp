@@ -68,11 +68,14 @@ private:
                     std::cout << response["message"].get<std::string>()  << std::endl;
                 }
                 if (response.contains("top_scores")) {
-                    std::cout << "Your best scores: ";
+                    std::cout << "Your best scores are ..."<<std::endl;
                     for (const auto& score : response["top_scores"]) {
                         std::cout << score << " ";
                     }
                     std::cout << std::endl;
+                }
+                if (response.contains("no_score")){
+                    std::cout << "Your best scores are ..." << response["no_score"].get<std::string>()<< std::endl;
                 }
                 if (response.contains("Target")){
                     std::cout << "The value you couldn't guess is: " << (int)response["Target"]<< std::endl;
@@ -111,17 +114,16 @@ private:
             try {
                 if (hint=="higher" || hint=="lower" || hint.empty()) {
                  json giveup_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                 auto quit_res = client.Post("/giveup", giveup_data.dump(), "application/json");
-                 handleServerResponse(quit_res, "giveup");
+                 auto giveup_res = client.Post("/giveup", giveup_data.dump(), "application/json");
+                 handleServerResponse(giveup_res, "giveup");
                 }
                 json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
                 auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
+                handleServerResponse(quit_res, "quit");
             } catch (const std::exception& e) {
                 std::cerr << "Error during cleanup: " << e.what() << std::endl;
             }
-            std::cout << "Cleanup completed" << std::endl;
         }
-    
 
     void startNewGame(int& lower, int& upper, int& guess, std::string& hint) {
         json new_game_data = {{"name", config.name}};
@@ -152,6 +154,7 @@ public:
 
     ~ClientGame() {
         instance = nullptr;
+        cleanup();
     }
 
     void playGame() {
@@ -169,25 +172,22 @@ public:
                     std::cout << "Enter your guess (integer) or 'q/Q' to quit: ";
                     std::string input;
                     std::cin >> input;
-
                     if (input == "q" || input == "Q") {
                         std::cout << "You chose to give up!" << std::endl;
                         json giveup_data = {{"name", config.name}, {"auto", config.auto_mode}};
                         auto giveup_res = client.Post("/giveup", giveup_data.dump(), "application/json");
                         handleServerResponse(giveup_res, "give up");  
+                        auto response = json::parse(giveup_res->body);
+                        hint=response["hint"];
                         std::cout << "Do you want to continue playing? ('n/N' to quit): ";
                         char choice;
                         std::cin >> choice;
                         if (choice == 'n' || choice == 'N') {
-                            json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                            auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
-                            handleServerResponse(quit_res, "quit");
                             break;
                         }
                         startNewGame(lower, upper, guess, hint);
                         continue;
                     }
-
                     if (std::regex_match(input, std::regex("^-?[0-9]+$"))) {
                         guess = std::stoi(input);
                     } else {
@@ -195,11 +195,9 @@ public:
                         continue;
                     }
                 }
-
                 json guess_data = {{"name", config.name}, {"guess", guess}, {"auto", config.auto_mode}};
                 auto guess_res = client.Post("/guess", guess_data.dump(), "application/json");
                 handleServerResponse(guess_res, "guess");
-
                 try {
                     auto response = json::parse(guess_res->body);
                     hint = response.value("hint", "");
@@ -209,9 +207,6 @@ public:
                         char choice;
                         std::cin >> choice;
                         if (choice == 'n' || choice == 'N') {
-                            json quit_data = {{"name", config.name}, {"auto", config.auto_mode}};
-                            auto quit_res = client.Post("/quit", quit_data.dump(), "application/json");
-                            handleServerResponse(quit_res, "quit");
                             break;
                         }
                         startNewGame(lower, upper, guess, hint);
@@ -222,7 +217,7 @@ public:
                 }
             }
         } catch (const std::runtime_error& e) {
-            std::cerr << "Game aborted: " << e.what() << std::endl;
+            std::cerr << "Game aborteed: " << e.what() << std::endl;
         }
     }
 };

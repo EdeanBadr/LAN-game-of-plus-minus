@@ -178,10 +178,7 @@ auto randomNumberGenerator(int lower, int upper) {
     return dis(rng);
 }
 std::string generateUniqueName(const std::string& player_name) {
-    static std::random_device randev;
-    static std::mt19937 rng(randev()); 
-    std::uniform_int_distribution<> dis(100000, 999999);  
-    int random_number = dis(rng);
+    int random_number = randomNumberGenerator(100000, 999999);
     return player_name + "_" + std::to_string(random_number);  
 }
 
@@ -323,11 +320,18 @@ void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats 
             }
 
             try {
-
                 response["message"] = "Thank you for playing!";
-                if(!auto_mode){
-                auto top_scores = getTopScores(player_name);
-                response["top_scores"] = top_scores;}
+                auto& history = player_score_history[player_name];
+
+                if (!auto_mode) {
+                    if (history.empty()) {
+                    response["no_score"] = "You don't even win once, what are you waiting for?";
+                     } else {
+                    auto top_scores = getTopScores(player_name);
+                    response["top_scores"] = top_scores;
+                   }
+               
+                }
             } catch (const std::exception &e) {
                 res.status = 500;
                 response["error"] = "Failed to retrieve top scores.";
@@ -378,6 +382,7 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
             int target = player_targets[player_name];
             response["message"] = "Never Give Up Again!";
             response["Target"] = target;
+            response["hint"] = "gaveup";
             gamestats.endTime = getCurrentTime();
             gamestats.triesCount = player_guesses_count[player_name];
             gamestats.gameState = "gave up";
