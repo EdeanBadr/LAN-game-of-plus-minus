@@ -113,11 +113,7 @@ std::string getCurrentTime() {
 
     struct tm time_info;
 
-#ifdef _WIN32
-    localtime_s(&time_info, &now_time_t);
-#else
     localtime_r(&now_time_t, &time_info);
-#endif
 
     std::ostringstream oss;
     oss << std::put_time(&time_info, "%d/%m/%y %H:%M:%S");
@@ -178,6 +174,7 @@ auto randomNumberGenerator(int lower, int upper) {
     return dis(rng);
 }
 std::string generateUniqueName(const std::string& player_name) {
+
     int random_number = randomNumberGenerator(100000, 999999);
     return player_name + "_" + std::to_string(random_number);  
 }
@@ -185,26 +182,29 @@ std::string generateUniqueName(const std::string& player_name) {
 void startGameHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
     std::lock_guard<std::mutex> lock(player_mutex);
     try {
-        auto data = json::parse(req.body);
-        if (!data.contains("name") || !data["name"].is_string()) {
-            res.status = 400; 
-            res.set_content("Invalid request:the name field is required and must be a string!", "text/plain");
+        if (!req.has_param("name")) {
+            res.status = 400;
+            res.set_content("Invalid request: the name parameter is required!", "text/plain");
             return;
         }
-        std::string player_name = data["name"];
+        std::string player_name = req.get_param_value("name");
         std::string unique_name = generateUniqueName(player_name);
 
         player_targets[unique_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
         player_guesses_count[unique_name] = 0; 
         gamestats.startTime = getCurrentTime();
-
         json response;
         response["uniqueName"] = unique_name;
         response["message"] = "The Game started! Your number is between "+std::to_string(serverConfig.lower_bound) + 
                                 " and " + 
                                 std::to_string(serverConfig.upper_bound);
+        response["lowerbound"] = serverConfig.lower_bound;
+        response["upperbound"] = serverConfig.upper_bound;
         res.set_content(response.dump(), "application/json");
         std::cout << "The Game has started for: " << unique_name << std::endl;
+    } catch (const json::parse_error& e) {
+        res.status = 400;
+        res.set_content(std::string("Error: ") + e.what(), "text/plain");
     } catch (const std::exception &e) {
         res.status = 500; 
         res.set_content(std::string("Error: ") + e.what(), "text/plain");
@@ -217,25 +217,23 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
     json response;
     try {
         auto data = json::parse(req.body);
-        std::string player_name = data["name"];
+        std::string player_name = req.get_header_value("Username");
+        auto  auto_str = req.get_header_value("Auto");
+        bool auto_mode = (auto_str == "1");
         gamestats.playerName = player_name;
         int guess = data["guess"];
-        bool auto_mode = data["auto"];
+        if (player_targets.find(player_name) == player_targets.end()) {
+                res.status = 400;
+                response["error"] = "You cant guess without starting a game first.";
+                res.set_content(response.dump(), "application/json");
+                return;
+            }
         if (!isValidGuess(guess, serverConfig)) {
             response["hint"] = "invalid";
             response["message"] = "Invalid guess: Must be between " + 
                                 std::to_string(serverConfig.lower_bound) + 
                                 " and " + 
                                 std::to_string(serverConfig.upper_bound);
-            res.set_content(response.dump(), "application/json");
-            return;
-        }
-
-        std::lock_guard<std::mutex> lock(player_mutex);
-        if (player_targets.find(player_name) == player_targets.end()) {
-            response["hint"] = "error";
-            response["message"] = "Player doesn't exist.";
-            res.status = 400;
             res.set_content(response.dump(), "application/json");
             return;
         }
@@ -254,11 +252,9 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
             if(!auto_mode){
             appendGameStats(gamestats);
             }
-            player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
             player_guesses_count[player_name] = 0;
             return;
         }
-
         if (guess < target) {
             response["hint"] = "higher";
             response["message"] = "Bro Try a higher number";
@@ -284,10 +280,6 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
                      std::cerr << "Error saving the game stats" << e.what() << std::endl;
                 }
                 }
-
-                player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
-                player_guesses_count[player_name] = 0;
-                gamestats.startTime = getCurrentTime();
             }
 
         res.status = 200;
@@ -304,17 +296,16 @@ void guessHandler(const httplib::Request &req, httplib::Response &res, ServerCon
 
 void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats &gamestats) {
     try {
-        auto data = json::parse(req.body);
-        std::string player_name = data["name"];
-        bool auto_mode= data["auto"];
-
+        std::string player_name = req.get_header_value("Username");
+        auto  auto_str = req.get_header_value("Auto");
+        bool auto_mode = (auto_str == "1");
         json response;
         {
             std::lock_guard<std::mutex> lock(player_mutex);
 
             if (player_targets.find(player_name) == player_targets.end()) {
                 res.status = 400;
-                response["error"] = "Player does not exist.";
+                response["error"] = "Start a game first and then quit later.";
                 res.set_content(response.dump(), "application/json");
                 return;
             }
@@ -365,8 +356,9 @@ void quitHandler(const httplib::Request &req, httplib::Response &res, Gamestats 
 
 void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats &gamestats) {
     try {
-        auto data = json::parse(req.body);
-        std::string player_name = data["name"];
+        std::string player_name = req.get_header_value("Username");
+        auto  auto_str = req.get_header_value("Auto");
+        bool auto_mode = (auto_str == "1");
 
         json response;
         {
@@ -374,7 +366,7 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
 
             if (player_targets.find(player_name) == player_targets.end()) {
                 res.status = 400;
-                response["error"] = "You haven't even signed in.";
+                response["error"] = "You haven't even started a game properly and you trying to give up?";
                 res.set_content(response.dump(), "application/json");
                 return;
             }
@@ -386,11 +378,8 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
             gamestats.endTime = getCurrentTime();
             gamestats.triesCount = player_guesses_count[player_name];
             gamestats.gameState = "gave up";
-            gamestats.startTime = getCurrentTime();
-            player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
-
             try {
-                appendGameStats(gamestats);
+                if (!auto_mode) appendGameStats(gamestats);
             } catch (const std::exception &e) {
                 std::cerr << "Error saving the game stats" << e.what() << std::endl;
                 return;
@@ -412,23 +401,22 @@ void giveUpHandler(const httplib::Request &req, httplib::Response &res, ServerCo
 
 void newGameHandler(const httplib::Request &req, httplib::Response &res, ServerConfig& serverConfig, Gamestats& gamestats) {
     try{
-    auto data = json::parse(req.body);
-    std::string player_name = data["name"];
-    json response;
-    std::lock_guard<std::mutex> lock(player_mutex);
-    if (player_targets.find(player_name) == player_targets.end()) {
-        response["hint"] = "error";
-        response["message"] = "Player doesn't exist. Please hit the /start endpoint first.";
-        res.status = 400;
-        res.set_content(response.dump(), "application/json");
-        return;
+        std::string player_name = req.get_header_value("Username");
+        json response;
+        std::lock_guard<std::mutex> lock(player_mutex);
+        if (player_targets.find(player_name) == player_targets.end()) {
+            response["hint"] = "error";
+            response["error"] = "Start a game properly first";
+            res.status = 400;
+            res.set_content(response.dump(), "application/json");
+            return;
     }
 
     player_targets[player_name] = randomNumberGenerator(serverConfig.lower_bound, serverConfig.upper_bound);
     player_guesses_count[player_name] = 0;
     gamestats.startTime = getCurrentTime();
     response["hint"] = "new_game";
-    response["message"] = "New game started with existing player!";
+    response["message"] = "New game, new odds!";
     res.set_content(response.dump(), "application/json");
     }catch (const json::exception &e) {
         res.status = 400;
@@ -444,11 +432,15 @@ int main(int argc, char* argv[]) {
     Gamestats gamestats;
     parseArguments(argc, argv, serverConfig);
     httplib::Server svr;
+    auto threads_num = std::thread::hardware_concurrency();
+    svr.new_task_queue = [threads_num] { 
+        return new httplib::ThreadPool(threads_num); 
+    };
     if (!openFile()) {
         return -1;
     }
 
-    svr.Post("/start", [&](const httplib::Request &req, httplib::Response &res) {
+    svr.Get("/start", [&](const httplib::Request &req, httplib::Response &res) {
         startGameHandler(req, res, serverConfig, gamestats);
     });
 

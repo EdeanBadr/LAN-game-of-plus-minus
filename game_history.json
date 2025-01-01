@@ -3099,3 +3099,1424 @@
     "start_time": "30/12/24 15:07:37",
     "tries_count": 33
 }
+{
+    "end_time": "31/12/24 16:33:19",
+    "game_state": "WON",
+    "player_name": "bab_929721",
+    "start_time": "31/12/24 16:33:01",
+    "tries_count": 11
+}
+{
+    "end_time": "31/12/24 16:33:39",
+    "game_state": "WON",
+    "player_name": "bab_929721",
+    "start_time": "31/12/24 16:33:23",
+    "tries_count": 6
+}
+{
+    "end_time": "31/12/24 16:34:05",
+    "game_state": "LOST",
+    "player_name": "bab_803216",
+    "start_time": "31/12/24 16:33:58",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 16:34:14",
+    "game_state": "LOST",
+    "player_name": "bab_803216",
+    "start_time": "31/12/24 16:34:06",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 16:34:20",
+    "game_state": "LOST",
+    "player_name": "bab_803216",
+    "start_time": "31/12/24 16:34:14",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 16:34:26",
+    "game_state": "WON",
+    "player_name": "bab_803216",
+    "start_time": "31/12/24 16:34:21",
+    "tries_count": 4
+}
+{
+    "end_time": "31/12/24 17:00:01",
+    "game_state": "gave up",
+    "player_name": "bab_829690",
+    "start_time": "31/12/24 17:00:01",
+    "tries_count": 1
+}
+{
+    "end_time": "31/12/24 17:00:13",
+    "game_state": "WON",
+    "player_name": "bab_318753",
+    "start_time": "31/12/24 17:00:10",
+    "tries_count": 1
+}
+{
+    "end_time": "31/12/24 17:00:20",
+    "game_state": "WON",
+    "player_name": "bab_318753",
+    "start_time": "31/12/24 17:00:16",
+    "tries_count": 2
+}
+{
+    "end_time": "31/12/24 17:00:32",
+    "game_state": "WON",
+    "player_name": "bab_318753",
+    "start_time": "31/12/24 17:00:23",
+    "tries_count": 7
+}
+{
+    "end_time": "31/12/24 17:00:40",
+    "game_state": "WON",
+    "player_name": "bab_318753",
+    "start_time": "31/12/24 17:00:33",
+    "tries_count": 5
+}
+{
+    "end_time": "31/12/24 17:00:49",
+    "game_state": "gave up",
+    "player_name": "bab_318753",
+    "start_time": "31/12/24 17:00:49",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 17:00:55",
+    "game_state": "gave up",
+    "player_name": "bab_318753",
+    "start_time": "31/12/24 17:00:55",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 18:02:47",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:02:37",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 18:30:48",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:30:37",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 18:30:51",
+    "game_state": "gave up",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:30:49",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 18:41:41",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:41:33",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 18:44:03",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:43:50",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 18:44:14",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:44:10",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 18:44:20",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:44:17",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 18:44:27",
+    "game_state": "LOST",
+    "player_name": "bab",
+    "start_time": "31/12/24 18:44:24",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 19:10:28",
+    "game_state": "WON",
+    "player_name": "bab_329978",
+    "start_time": "31/12/24 19:10:21",
+    "tries_count": 7
+}
+{
+    "end_time": "31/12/24 19:13:36",
+    "game_state": "WON",
+    "player_name": "bab_161850",
+    "start_time": "31/12/24 19:13:34",
+    "tries_count": 2
+}
+{
+    "end_time": "31/12/24 19:13:45",
+    "game_state": "LOST",
+    "player_name": "bab_161850",
+    "start_time": "31/12/24 19:13:38",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 19:13:54",
+    "game_state": "WON",
+    "player_name": "bab_161850",
+    "start_time": "31/12/24 19:13:48",
+    "tries_count": 7
+}
+{
+    "end_time": "31/12/24 19:14:05",
+    "game_state": "WON",
+    "player_name": "bab_641783",
+    "start_time": "31/12/24 19:14:04",
+    "tries_count": 2
+}
+{
+    "end_time": "31/12/24 19:14:35",
+    "game_state": "LOST",
+    "player_name": "bab_641783",
+    "start_time": "31/12/24 19:14:28",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 19:14:39",
+    "game_state": "gave up",
+    "player_name": "bab_641783",
+    "start_time": "31/12/24 19:14:36",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 19:14:50",
+    "game_state": "gave up",
+    "player_name": "bab_641783",
+    "start_time": "31/12/24 19:14:49",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 19:14:53",
+    "game_state": "gave up",
+    "player_name": "bab_641783",
+    "start_time": "31/12/24 19:14:52",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 19:15:14",
+    "game_state": "gave up",
+    "player_name": "bab_641783",
+    "start_time": "31/12/24 19:15:13",
+    "tries_count": 0
+}
+{
+    "end_time": "31/12/24 19:15:19",
+    "game_state": "gave up",
+    "player_name": "bab_570187",
+    "start_time": "31/12/24 19:15:17",
+    "tries_count": 2
+}
+{
+    "end_time": "31/12/24 19:17:37",
+    "game_state": "LOST",
+    "player_name": "bab_348035",
+    "start_time": "31/12/24 19:17:34",
+    "tries_count": 10
+}
+{
+    "end_time": "31/12/24 19:17:44",
+    "game_state": "gave up",
+    "player_name": "bab_348035",
+    "start_time": "31/12/24 19:17:37",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 02:17:19",
+    "game_state": "WON",
+    "player_name": "bab_980139",
+    "start_time": "01/01/25 02:17:11",
+    "tries_count": 3
+}
+{
+    "end_time": "01/01/25 02:20:03",
+    "game_state": "gave up",
+    "player_name": "",
+    "start_time": "01/01/25 02:17:28",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 02:28:25",
+    "game_state": "gave up",
+    "player_name": "testPlayer_940416",
+    "start_time": "01/01/25 02:28:25",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 02:28:25",
+    "game_state": "WON",
+    "player_name": "quitPlayer_380246",
+    "start_time": "01/01/25 02:28:25",
+    "tries_count": 26
+}
+{
+    "end_time": "01/01/25 02:29:47",
+    "game_state": "WON",
+    "player_name": "quitPlayer_702028",
+    "start_time": "01/01/25 02:29:47",
+    "tries_count": 27
+}
+{
+    "end_time": "01/01/25 02:32:02",
+    "game_state": "gave up",
+    "player_name": "testPlayer_521160",
+    "start_time": "01/01/25 02:32:02",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 02:32:02",
+    "game_state": "WON",
+    "player_name": "quitPlayer_786778",
+    "start_time": "01/01/25 02:32:02",
+    "tries_count": 85
+}
+{
+    "end_time": "01/01/25 03:03:52",
+    "game_state": "WON",
+    "player_name": "bab_105370",
+    "start_time": "01/01/25 03:03:42",
+    "tries_count": 2
+}
+{
+    "end_time": "01/01/25 03:04:49",
+    "game_state": "WON",
+    "player_name": "bab_481627",
+    "start_time": "01/01/25 03:04:46",
+    "tries_count": 2
+}
+{
+    "end_time": "01/01/25 03:05:02",
+    "game_state": "WON",
+    "player_name": "bab_481627",
+    "start_time": "01/01/25 03:04:52",
+    "tries_count": 2
+}
+{
+    "end_time": "01/01/25 03:05:16",
+    "game_state": "gave up",
+    "player_name": "bab_481627",
+    "start_time": "01/01/25 03:05:04",
+    "tries_count": 11
+}
+{
+    "end_time": "01/01/25 03:05:31",
+    "game_state": "LOST",
+    "player_name": "bab_651209",
+    "start_time": "01/01/25 03:05:30",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 03:05:38",
+    "game_state": "LOST",
+    "player_name": "bab_651209",
+    "start_time": "01/01/25 03:05:36",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 03:05:42",
+    "game_state": "LOST",
+    "player_name": "bab_651209",
+    "start_time": "01/01/25 03:05:38",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 03:05:57",
+    "game_state": "WON",
+    "player_name": "bab_359090",
+    "start_time": "01/01/25 03:05:54",
+    "tries_count": 3
+}
+{
+    "end_time": "01/01/25 03:06:07",
+    "game_state": "LOST",
+    "player_name": "bab_359090",
+    "start_time": "01/01/25 03:06:03",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 03:06:13",
+    "game_state": "WON",
+    "player_name": "bab_359090",
+    "start_time": "01/01/25 03:06:11",
+    "tries_count": 1
+}
+{
+    "end_time": "01/01/25 03:06:18",
+    "game_state": "LOST",
+    "player_name": "bab_359090",
+    "start_time": "01/01/25 03:06:14",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 03:06:24",
+    "game_state": "WON",
+    "player_name": "bab_359090",
+    "start_time": "01/01/25 03:06:21",
+    "tries_count": 4
+}
+{
+    "end_time": "01/01/25 03:06:31",
+    "game_state": "gave up",
+    "player_name": "bab_359090",
+    "start_time": "01/01/25 03:06:30",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 03:37:15",
+    "game_state": "gave up",
+    "player_name": "testPlayer_142825",
+    "start_time": "01/01/25 03:37:15",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 03:37:15",
+    "game_state": "WON",
+    "player_name": "testPlayer_132703",
+    "start_time": "01/01/25 03:37:15",
+    "tries_count": 3
+}
+{
+    "end_time": "01/01/25 03:39:12",
+    "game_state": "gave up",
+    "player_name": "testPlayer_841142",
+    "start_time": "01/01/25 03:39:12",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 03:39:12",
+    "game_state": "WON",
+    "player_name": "testPlayer_222494",
+    "start_time": "01/01/25 03:39:12",
+    "tries_count": 17
+}
+{
+    "end_time": "01/01/25 04:38:58",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:38:58",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:38:59",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:38:59",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:38:59",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:38:59",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:00",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:00",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:00",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:00",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:01",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:01",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:01",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:01",
+    "tries_count": 3
+}
+{
+    "end_time": "01/01/25 04:39:02",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:02",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:02",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:02",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:03",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:03",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:03",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:03",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:04",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:04",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:04",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:04",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:05",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:05",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:05",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:05",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:06",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:06",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:06",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:06",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:07",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:07",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:07",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:07",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:08",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:08",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:08",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:08",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:09",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:09",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:09",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:09",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:10",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:10",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:10",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:10",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:11",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:11",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:11",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:11",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:12",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:12",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 04:39:12",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:12",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:13",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:13",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:13",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:13",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:14",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:14",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:14",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:14",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:15",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:15",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 04:39:15",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:15",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:16",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:16",
+    "tries_count": 6
+}
+{
+    "end_time": "01/01/25 04:39:16",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:16",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:17",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:17",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:17",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:17",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:18",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:18",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:18",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:18",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:19",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:19",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:19",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:19",
+    "tries_count": 6
+}
+{
+    "end_time": "01/01/25 04:39:20",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:20",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:20",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:20",
+    "tries_count": 7
+}
+{
+    "end_time": "01/01/25 04:39:21",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:21",
+    "tries_count": 3
+}
+{
+    "end_time": "01/01/25 04:39:21",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:21",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:22",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:22",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:22",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:22",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:23",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:23",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:23",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:23",
+    "tries_count": 7
+}
+{
+    "end_time": "01/01/25 04:39:24",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:24",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:24",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:24",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:25",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:25",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:25",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:25",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:26",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:26",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:26",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:26",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:27",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:27",
+    "tries_count": 7
+}
+{
+    "end_time": "01/01/25 04:39:27",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:27",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:28",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:28",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:28",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:28",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:29",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:29",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:29",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:29",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:30",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:30",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:30",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:30",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:31",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:31",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:31",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:31",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:32",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:32",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:32",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:32",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:33",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:33",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:33",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:33",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:34",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:34",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:34",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:34",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:35",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:35",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:35",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:35",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:36",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:36",
+    "tries_count": 7
+}
+{
+    "end_time": "01/01/25 04:39:36",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:36",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:37",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:37",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:37",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:37",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:38",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:38",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:38",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:38",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:39",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:39",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:39",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:39",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:40",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:40",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:40",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:40",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:41",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:41",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:41",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:41",
+    "tries_count": 3
+}
+{
+    "end_time": "01/01/25 04:39:42",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:42",
+    "tries_count": 7
+}
+{
+    "end_time": "01/01/25 04:39:42",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:42",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:43",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:43",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:43",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:43",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:44",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:44",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:44",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:44",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:45",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:45",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:45",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:45",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:46",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:46",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:46",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:46",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:47",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:47",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:47",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:47",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:48",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:48",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:48",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:48",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:49",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:49",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:49",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:49",
+    "tries_count": 6
+}
+{
+    "end_time": "01/01/25 04:39:50",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:50",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:50",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:50",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:51",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:51",
+    "tries_count": 6
+}
+{
+    "end_time": "01/01/25 04:39:51",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:51",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:52",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:52",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:52",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:52",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:53",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:53",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:53",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:53",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:54",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:54",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:54",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:54",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:39:55",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:55",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:55",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:55",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:56",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:56",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:56",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:56",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:57",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:57",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:39:57",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:57",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:58",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:58",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:58",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:58",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:59",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:39:59",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:39:59",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:39:59",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:40:00",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:00",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:40:00",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:40:00",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:40:01",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:01",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:40:01",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:40:01",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:40:02",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:02",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:40:02",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:40:02",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:40:03",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:03",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:40:03",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:40:03",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:40:04",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:04",
+    "tries_count": 8
+}
+{
+    "end_time": "01/01/25 04:40:04",
+    "game_state": "WON",
+    "player_name": "computer_892432",
+    "start_time": "01/01/25 04:40:04",
+    "tries_count": 10
+}
+{
+    "end_time": "01/01/25 04:40:05",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:05",
+    "tries_count": 9
+}
+{
+    "end_time": "01/01/25 04:40:06",
+    "game_state": "WON",
+    "player_name": "computer_264974",
+    "start_time": "01/01/25 04:40:06",
+    "tries_count": 4
+}
+{
+    "end_time": "01/01/25 04:41:37",
+    "game_state": "WON",
+    "player_name": "badro_391981",
+    "start_time": "01/01/25 04:40:19",
+    "tries_count": 24
+}
+{
+    "end_time": "01/01/25 04:41:58",
+    "game_state": "gave up",
+    "player_name": "badro_391981",
+    "start_time": "01/01/25 04:41:38",
+    "tries_count": 7
+}
+{
+    "end_time": "01/01/25 04:42:38",
+    "game_state": "gave up",
+    "player_name": "testPlayer_666642",
+    "start_time": "01/01/25 04:42:38",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 04:43:38",
+    "game_state": "gave up",
+    "player_name": "testPlayer_696209",
+    "start_time": "01/01/25 04:43:38",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 04:43:38",
+    "game_state": "WON",
+    "player_name": "testPlayer_692839",
+    "start_time": "01/01/25 04:43:38",
+    "tries_count": 30
+}
+{
+    "end_time": "01/01/25 04:45:15",
+    "game_state": "gave up",
+    "player_name": "badro_107391",
+    "start_time": "01/01/25 04:45:08",
+    "tries_count": 5
+}
+{
+    "end_time": "01/01/25 04:45:24",
+    "game_state": "gave up",
+    "player_name": "badro_107391",
+    "start_time": "01/01/25 04:45:18",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 04:45:28",
+    "game_state": "gave up",
+    "player_name": "badro_107391",
+    "start_time": "01/01/25 04:45:27",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 04:45:31",
+    "game_state": "gave up",
+    "player_name": "badro_107391",
+    "start_time": "01/01/25 04:45:30",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 04:47:33",
+    "game_state": "gave up",
+    "player_name": "babo_898118",
+    "start_time": "01/01/25 04:47:23",
+    "tries_count": 4
+}

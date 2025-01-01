@@ -5,10 +5,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(${CMAKE_SOURCE_DIR}/libs)
 
+
 add_executable(server Server/Server.cpp)
 add_executable(client Client/Client.cpp)
 
+
+
 include(CTest)
 enable_testing()
-
 
