@@ -4520,3 +4520,101 @@
     "start_time": "01/01/25 04:47:23",
     "tries_count": 4
 }
+{
+    "end_time": "01/01/25 06:32:56",
+    "game_state": "gave up",
+    "player_name": "bilal_137791",
+    "start_time": "01/01/25 06:32:37",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 06:32:59",
+    "game_state": "gave up",
+    "player_name": "bilal_137791",
+    "start_time": "01/01/25 06:32:37",
+    "tries_count": 1
+}
+{
+    "end_time": "01/01/25 06:36:38",
+    "game_state": "gave up",
+    "player_name": "bilal_498549",
+    "start_time": "01/01/25 06:36:37",
+    "tries_count": 0
+}
+{
+    "end_time": "01/01/25 06:36:57",
+    "game_state": "gave up",
+    "player_name": "bilal_829704",
+    "start_time": "01/01/25 06:36:39",
+    "tries_count": 1
+}
+{
+    "end_time": "01/01/25 06:38:06",
+    "game_state": "gave up",
+    "player_name": "babo_209333",
+    "start_time": "01/01/25 06:37:02",
+    "tries_count": 1
+}
+{
+    "end_time": "01/01/25 06:38:10",
+    "game_state": "gave up",
+    "player_name": "babo_209333",
+    "start_time": "01/01/25 06:37:02",
+    "tries_count": 1
+}
+{
+    "end_time": "01/01/25 15:53:40",
+    "game_state": "gave up",
+    "player_name": "babo_333919",
+    "start_time": "01/01/25 06:39:01",
+    "tries_count": 0
+}
+{
+    "end_time": "05/01/25 16:15:37",
+    "game_state": "gave up",
+    "player_name": "unkown player_803111",
+    "start_time": "05/01/25 16:14:37",
+    "tries_count": 2
+}
+{
+    "end_time": "05/01/25 16:19:07",
+    "game_state": "WON",
+    "player_name": "badro_974868",
+    "start_time": "05/01/25 16:18:55",
+    "tries_count": 1
+}
+{
+    "end_time": "05/01/25 16:25:24",
+    "game_state": "gave up",
+    "player_name": "unkown player_615749",
+    "start_time": "05/01/25 16:23:47",
+    "tries_count": 2
+}
+{
+    "end_time": "05/01/25 16:28:26",
+    "game_state": "gave up",
+    "player_name": "unkown player_487511",
+    "start_time": "05/01/25 16:25:27",
+    "tries_count": 1
+}
+{
+    "end_time": "05/01/25 16:40:52",
+    "game_state": "WON",
+    "player_name": "badro_124854",
+    "start_time": "05/01/25 16:40:43",
+    "tries_count": 8
+}
+{
+    "end_time": "05/01/25 16:41:05",
+    "game_state": "WON",
+    "player_name": "badro_124854",
+    "start_time": "05/01/25 16:40:59",
+    "tries_count": 7
+}
+{
+    "end_time": "05/01/25 16:41:12",
+    "game_state": "gave up",
+    "player_name": "badro_124854",
+    "start_time": "05/01/25 16:41:07",
+    "tries_count": 0
+}

@@ -111,13 +111,12 @@ public:
                 auto response = json::parse(guess_res->body);
                 hint = response.value("hint", "");
                 if (hint == "correct" || hint == "game_over") {
-                   std::cout << "Do you want to try again? ('n/N' to quit):";
+                    std::cout << "Do you want to try again? ('n/N' to quit):";
                     char choice;
                     std::cin >> choice;
                     if (choice == 'n' || choice == 'N') {
                         break;
                     }
-                    std::this_thread::sleep_for(std::chrono::seconds(1));
 
                     startNewGame(lower, upper, guess, hint);
                 }
@@ -130,7 +129,8 @@ public:
         std::cerr << "Game aborted: " << e.what() << std::endl;
     }
 }
-void handleServerResponse(const httplib::Result& res, const std::string& action) {
+private:
+     void handleServerResponse(const httplib::Result& res, const std::string& action) {
         if (!res) {
             throw std::runtime_error("Server connection failed");
         }
@@ -217,14 +217,11 @@ void handleServerResponse(const httplib::Result& res, const std::string& action)
         std::cout << "May the odds be ever in your favor " << config.name << "!" << std::endl;
     }
 
-private:
     ClientConfig config;
     httplib::Client& client;
     static ClientGame* instance;
     std::string hint;
-    httplib::Headers headers = {{"Username", config.name},
-                        {"Auto", std::to_string(config.auto_mode)}
-                    };
+    httplib::Headers headers;
     int lowerbound;
     int upperbound;
 };

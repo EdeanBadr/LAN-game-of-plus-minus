@@ -58,36 +58,6 @@ struct Gamestats {
     std::string gameState = "";
 };
 
-/**void appendGameStats(const Gamestats& gamestats) {
-    std::lock_guard<std::mutex> lock(file_mutex);
-    std::ifstream infile(GAME_HISTORY_FILE);
-    json game_history;
-
-    if (infile.is_open()) {
-        infile >> game_history;
-    } else {
-        game_history = json::array();
-    }
-    infile.close();
-
-    json game_entry;
-    game_entry["player_name"] = gamestats.playerName;
-    game_entry["start_time"] = gamestats.startTime;
-    game_entry["end_time"] = gamestats.endTime;
-    game_entry["tries_count"] = gamestats.triesCount;
-    game_entry["game_state"] = gamestats.gameState;
-
-    game_history.push_back(game_entry);
-
-    std::ofstream outfile(GAME_HISTORY_FILE);
-    if (!outfile.is_open()) {
-        std::cerr << "Error opening file for writing." << std::endl;
-        return;
-    }
-
-    outfile << game_history.dump(4);
-    outfile.close();
-}**/
 void appendGameStats(const Gamestats& gamestats) {
     std::lock_guard<std::mutex> lock(file_mutex);
 
@@ -437,7 +407,8 @@ int main(int argc, char* argv[]) {
         return new httplib::ThreadPool(threads_num); 
     };
     if (!openFile()) {
-        return -1;
+        std::cout << "the games wont be saved." << std::endl;
+
     }
 
     svr.Get("/start", [&](const httplib::Request &req, httplib::Response &res) {
