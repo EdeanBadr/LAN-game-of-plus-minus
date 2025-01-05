@@ -5,7 +5,6 @@
 #include <nlohmann/json.hpp>  
 
 using json = nlohmann::json;
-httplib::Headers headers;
 
 struct ClientConfig {
     std::string host = "localhost";  
